@@ -1,0 +1,112 @@
+/* Umumiy sozlamalar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #1f1f1f;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #ff9800;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff9800;
+    color: #1f1f1f;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    text-align: center;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+/* Mahsulotlar */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover faqat kompyuterda ishlaydi */
+@media (hover: hover) and (pointer: fine) {
+    .item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+        border-color: #ff9800;
+    }
+}
+
+.item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    margin-top: 20px;
+}
+
+/* Silliq skroll CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+.cola{
+    background: #ffffff;
+}
